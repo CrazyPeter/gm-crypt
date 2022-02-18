@@ -1,5 +1,7 @@
 # gm-crypt-nodejs 
 
+在原有项目的基础上兼容了小程序生态，具体修改可以看git提交记录📝。
+
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 基于`javascript`和[`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)的国密加密算法实现。
