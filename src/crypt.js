@@ -15,9 +15,9 @@ class Crypt {
     // if not browser env, then require node.js's util. otherwise just use window's
     // const TextEncoder = (typeof window === 'undefined') ? require('util').TextEncoder : window.TextEncoder
     // always utf-8
-    // let encoder = new TextEncoder()
-    // return encoder.encode(str)
-    return unescape(encodeURIComponent(str)).split("").map(val => val.charCodeAt());
+     let encoder = new TextEncoder()
+     return encoder.encode(str)
+    // return unescape(encodeURIComponent(str)).split("").map(val => val.charCodeAt());
   }
 
   /**
@@ -31,9 +31,9 @@ class Crypt {
   static utf8ArrayBufferToString (strBuffer) {
     // if not browser env, then require node.js's util. otherwise just use window's
     // const TextDecoder = (typeof window === 'undefined') ? require('util').TextDecoder : window.TextDecoder
-    // let decoder = new TextDecoder('utf-8')
-    // return decoder.decode(strBuffer)
-    return decodeURIComponent(escape(String.fromCharCode(strBuffer)));
+     let decoder = new TextDecoder('utf-8')
+     return decoder.decode(strBuffer)
+    //return decodeURIComponent(escape(String.fromCharCode(strBuffer)));
 
   }
 
